@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ module with one class User"""
+from models.base_model import BaseModel
 
 
-class User:
+class User(BaseModel):
     """implement class"""
     # public attributes
     email = ""
