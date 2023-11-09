@@ -3,6 +3,7 @@
 from models.base_model import BaseModel
 from models import storage
 import cmd
+import shlex
 
 
 class HBNBCommand(cmd.Cmd):
@@ -42,7 +43,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """Print the string representation of an instance"""
-        args = arg.split()
+        args = shlex.split(arg)
         if not args:
             print("** class name missing **")
         elif args[0] not in HBNBCommand.defined_class_list:
@@ -60,7 +61,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_destroy(self, arg):
         """Delete an instance based on the class name and id"""
-        args = arg.split()
+        args = shlex.split(arg)
         if not args:
             print("** class name missing **")
         elif args[0] not in HBNBCommand.defined_class_list:
@@ -78,7 +79,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, arg):
         """Print all string representation of all instances"""
-        args = arg.split()
+        args = shlex.split(arg)
         if not args:
             # show all instances in storageFile
             str_obj_list = [str(ref_obj) for ref_obj in storage.all().values()]
@@ -90,6 +91,47 @@ class HBNBCommand(cmd.Cmd):
             str_obj_list = [str(ref_obj) for ref_obj in storage.all().values()
                             if type(ref_obj).__name__ == args[0]]
             print(str_obj_list)
+
+    def do_update(self, arg):
+        """Update an instance based on the class name and id"""
+        args = shlex.split(arg)
+        if not args:
+            print("** class name missing **")
+        elif args[0] not in HBNBCommand.defined_class_list:
+            print("** class doesn't exist **")
+        elif len(args) < 2:
+            print("** instance id missing **")
+        else:
+            str_object_id = ".".join(map(str, args[:2]))
+            # search in storage __objects for this id
+            ref_obj_found = storage.all().get(str_object_id, None)
+            if ref_obj_found is None:
+                print("** no instance found **")
+            elif len(args) < 3:
+                print("** attribute name missing **")
+            elif len(args) < 4:
+                print("** value missing **")
+            else:
+                obj_attr_name = args[2]
+                obj_attr_val = args[3]
+
+                try:
+                    # convert attribute value to correct type
+                    if hasattr(ref_obj_found, obj_attr_name):
+                        attr_value_type = type(getattr(ref_obj_found,
+                                                       obj_attr_name))
+                    else:
+                        # if the attribute doesn't exist
+                        attr_value_type = type(obj_attr_val)
+
+                    casted_attr_obj_val = attr_value_type(obj_attr_val)
+
+                    # update object new attribute
+                    setattr(ref_obj_found, obj_attr_name, casted_attr_obj_val)
+                    # save object to file storage after successful update
+                    ref_obj_found.save()
+                except ValueError:
+                    pass
 
 
 if __name__ == '__main__':
