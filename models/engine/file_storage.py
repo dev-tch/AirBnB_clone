@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ module with one class FileStorage"""
 from models.base_model import BaseModel
+from models.user import User
 import json
 
 
@@ -8,7 +9,9 @@ class FileStorage:
     """implementation of class"""
 
     MapClass = {
-        "BaseModel": BaseModel}
+        "BaseModel": BaseModel,
+        "User": User
+    }
     #  class attribute : string - path to the JSON file (ex: file.json)
     __file_path = "file.json"
     #  class attribute : dictionary - empty but will
