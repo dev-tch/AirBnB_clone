@@ -7,9 +7,6 @@ import models
 
 class BaseModel:
     """implement class BaseModel"""
-    id: str
-    created_at: datetime
-    updated_at: datetime
 
     def __init__(self, *args, **kwargs):
         """constructor method
