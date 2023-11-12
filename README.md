@@ -50,7 +50,7 @@ EOF  help  quit
 (hbnb) 
 $
 ````
-### Commands supported
+### Supported commands
 1. quit: to exit the program
    > Usage: ``quit `` 
    ```
