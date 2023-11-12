@@ -57,10 +57,8 @@ $
    (hbnb) quit
    vagrant@ubuntu-focal:~/.../AirBnB_clone$
    ```
-3. help  or help <cmd>  to show supported commands or info about specific command
+3. help  or help 'cmd'  : to show supported commands or info about specific command
    ````
-   vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
-   (hbnb) quit
    vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
    (hbnb) help
 
