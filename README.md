@@ -96,5 +96,5 @@ $
    (hbnb)
    ```
 7- update :  Updates an instance based on the class name and id by adding or updating attribute
- > Usage: update <class name> <id> <attribute name> "<attribute value>"
+ > Usage: ``update <class name> <id> <attribute name> "<attribute value>"``
 
