@@ -76,13 +76,14 @@ $
    (hbnb)
    ````
    
-4. show 'class name' 'id' : Prints the string representation of an instance based on the class name and 
+4. show 'class name' 'id' : Prints the string representation of an instance based on the class name and id
+    > Usage: `` show <class name> <id> `` 
    ````
    (hbnb) show BaseModel 14d44bea-45c5-4799-b8a0-6a81969e80bd
    [BaseModel] (14d44bea-45c5-4799-b8a0-6a81969e80bd) {'id': '14d44bea-45c5-4799-b8a0-6a81969e80bd', 'created_at': datetime.datetime(2023, 11, 12, 23, 2, 4, 680825), 'updated_at': datetime.datetime(2023, 11, 12, 23, 2, 4,    680846)}
    (hbnb)
    ````
-5. destroy: Deletes an instance based on the class name and id
+6. destroy: Deletes an instance based on the class name and id
    > Usage: `` destroy <class name> <id> `` 
    ````
    (hbnb) destroy BaseModel 14d44bea-45c5-4799-b8a0-6a81969e80bd
