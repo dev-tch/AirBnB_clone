@@ -10,7 +10,8 @@ from models.review import Review
 from models import storage
 import cmd
 import shlex
-import re  # import regex
+import re
+import sys
 
 
 class HBNBCommand(cmd.Cmd):
@@ -201,6 +202,15 @@ class HBNBCommand(cmd.Cmd):
         print("*** Unknown syntax: {}".format(args))
         return False
 
+    def preloop(self):
+        """handle non-interactive mode"""
+        if not sys.stdin.isatty():
+            self.prompt = self.prompt + "\n"
+
 
 if __name__ == '__main__':
-    HBNBCommand().cmdloop()
+    my_console = HBNBCommand()
+    if len(sys.argv) > 1:
+        my_console.onecmd(' '.join(sys.argv[1:]))
+    else:
+        my_console.cmdloop()
