@@ -82,14 +82,14 @@ $
    [BaseModel] (14d44bea-45c5-4799-b8a0-6a81969e80bd) {'id': '14d44bea-45c5-4799-b8a0-6a81969e80bd', 'created_at': datetime.datetime(2023, 11, 12, 23, 2, 4, 680825), 'updated_at': datetime.datetime(2023, 11, 12, 23, 2, 4,    680846)}
    (hbnb)
    ````
-5. destroy 'class name' 'id': Deletes an instance based on the class name and id
+5. destroy: Deletes an instance based on the class name and id
+   > Usage: `` destroy <class name> <id> `` 
    ````
    (hbnb) destroy BaseModel 14d44bea-45c5-4799-b8a0-6a81969e80bd
    (hbnb)
    ````
-6. all : Prints all string representation of all instances based or not on the class name
+7. all: Prints all string representation of all instances based or not on the class name
    > Usage: `` all or  all <class name> `` 
-   >  
    ```
    (hbnb) all
    ["[BaseModel] (bf9194b3-6cbb-4401-a686-c9c6bdae0ae4) {'id': 'bf9194b3-6cbb-4401-a686-c9c6bdae0ae4', 'created_at': datetime.datetime(2023, 11, 12, 17, 7, 4, 432550), 'updated_at': datetime.datetime(2023, 11, 12, 17,       7, 4, 432678), 'name': 'My First Model', 'my_number': 89}", "[User] (df12dc43-0902-462d-8ef8-da9b0698a4c0) {'id': 'df12dc43-0902-462d-8ef8-da9b0698a4c0', 'created_at': datetime.datetime(2023, 11, 12, 23, 15, 4,         263378), 'updated_at': datetime.datetime(2023, 11, 12, 23, 15, 4, 263399)}", "[BaseModel] (ebd30f7e-ecf9-422f-bd4d-25e5c5c0e9d4) {'id': 'ebd30f7e-ecf9-422f-bd4d-25e5c5c0e9d4', 'created_at': datetime.datetime(2023,       11, 12, 23, 15, 21, 575863), 'updated_at': datetime.datetime(2023, 11, 12, 23, 15, 21, 575886)}"]
