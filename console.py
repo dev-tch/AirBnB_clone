@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """entry point of the command interpreter"""
+import json
+
 from models.base_model import BaseModel
 from models.user import User
 from models.place import Place
@@ -20,7 +22,7 @@ class HBNBCommand(cmd.Cmd):
                           "City", "Amenity", "Place",
                           "Review"
                           ]
-    custom_procs = ["all", "count", "show", "destroy", "update"]
+    custom_procs = ["all", "count", "show", "destroy", "update", "update_dict"]
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
@@ -144,6 +146,15 @@ class HBNBCommand(cmd.Cmd):
                 except ValueError:
                     pass
 
+    def do_update_dict(self, arg):
+        """update object using dictionary"""
+        args2 = arg.split(",", 1)
+        args = shlex.split(args2[0])
+        dict_obj = json.loads(args2[1])
+        for key, value in dict_obj.items():
+            new_arg = "{} {} {} {}".format(args[0], args[1], key, value)
+            self.do_update(new_arg)
+
     def do_count(self, arg):
         """Retrieve the number of instances of a class"""
         args = shlex.split(arg)
@@ -176,7 +187,7 @@ class HBNBCommand(cmd.Cmd):
         elif name_proc in HBNBCommand.custom_procs[2:4]:
             if not re.match(r"\"[a-zA-Z0-9-]+\"", params):
                 flag = False
-        elif name_proc == HBNBCommand.custom_procs[4]:
+        elif name_proc in HBNBCommand.custom_procs[4:]:
             # <id>, <attribute name>, <attribute value>
             reg1 = r"\"[a-zA-Z0-9-]+\", \"\w+\", \"\w+\""
             # <id>, <dictionary representation>
@@ -188,7 +199,8 @@ class HBNBCommand(cmd.Cmd):
                 params = params.replace(",", " ")
             elif re.match(reg2, params):
                 reg2_ok = True
-                params = params.replace(",", " ", 1)
+                # params = params.replace(",", " ", 1)
+                name_proc = "{}_dict".format(name_proc)
             if not reg1_ok and not reg2_ok:
                 flag = False
         if (flag and name_cls in HBNBCommand.defined_class_list and
