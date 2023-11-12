@@ -113,7 +113,6 @@ class HBNBCommand(cmd.Cmd):
         elif len(args) < 2:
             print("** instance id missing **")
         else:
-            print(args)
             str_object_id = ".".join(map(str, args[:2]))
             # search in storage __objects for this id
             ref_obj_found = storage.all().get(str_object_id, None)
