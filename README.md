@@ -52,7 +52,11 @@ $
 ````
 ### Commands supported
 1. quit: to exit the program
-   `$ quit `
+   ```
+   vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
+   (hbnb) quit
+   vagrant@ubuntu-focal:~/.../AirBnB_clone$
+   ```
 3. help : show list of commands
 4. help <command> : show manual of specific command
 5. create <class name> : create new instance object of type class name
