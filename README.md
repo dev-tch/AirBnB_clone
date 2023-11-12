@@ -1,5 +1,6 @@
+## **************************** project AirBnB clone ************************************
 ![logo project Hbnb.](https://github.com/dev-tch/AirBnB_clone/blob/main/pictures/hbnb_logo.png)
-## project AirBnB clone
+
 
 ## Background Context
 This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
