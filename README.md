@@ -50,3 +50,9 @@ EOF  help  quit
 (hbnb) 
 $
 ````
+### Commands supported
+1- quit and EOF : to exit the program
+2- help : show list of commands
+3- help <command> : show manual of specific command
+3- create <class name> : create new instance object of type class name
+
