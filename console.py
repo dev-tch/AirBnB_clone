@@ -91,7 +91,6 @@ class HBNBCommand(cmd.Cmd):
     def do_all(self, arg):
         """Print all string representation of all instances"""
         args = shlex.split(arg)
-        print(args)
         if not args:
             # show all instances in storageFile
             str_obj_list = [str(ref_obj) for ref_obj in storage.all().values()]
