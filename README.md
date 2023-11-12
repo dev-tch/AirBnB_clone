@@ -57,7 +57,7 @@ $
    (hbnb) quit
    vagrant@ubuntu-focal:~/.../AirBnB_clone$
    ```
-3. help  or help 'cmd'  : to show supported commands or info about specific command
+2. help  or help 'cmd'  : to show supported commands or info about specific command
    ````
    vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
    (hbnb) help
@@ -69,6 +69,10 @@ $
    (hbnb) help all
    Print all string representation of all instances
    (hbnb)
-5. help <command> : show manual of specific command
-6. create <class name> : create new instance object of type class name
+3. create <class name> : create new instance object of type class name
+   ````
+   (hbnb) create BaseModel
+   14d44bea-45c5-4799-b8a0-6a81969e80bd
+   (hbnb)
+   ````
 
