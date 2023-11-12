@@ -57,7 +57,20 @@ $
    (hbnb) quit
    vagrant@ubuntu-focal:~/.../AirBnB_clone$
    ```
-3. help : show list of commands
-4. help <command> : show manual of specific command
-5. create <class name> : create new instance object of type class name
+3. help  or help <cmd>  to show supported commands or info about specific command
+   ````
+   vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
+   (hbnb) quit
+   vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
+   (hbnb) help
+
+   Documented commands (type help <topic>):
+   ========================================
+   EOF  all  count  create  destroy  help  quit  show  update
+
+   (hbnb) help all
+   Print all string representation of all instances
+   (hbnb)
+5. help <command> : show manual of specific command
+6. create <class name> : create new instance object of type class name
 
