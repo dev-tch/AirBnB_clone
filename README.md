@@ -51,8 +51,9 @@ EOF  help  quit
 $
 ````
 ### Commands supported
-1. quit and EOF : to exit the program
-2. help : show list of commands
-3. help <command> : show manual of specific command
-4. create <class name> : create new instance object of type class name
+1. quit: to exit the program
+   `$ quit `
+3. help : show list of commands
+4. help <command> : show manual of specific command
+5. create <class name> : create new instance object of type class name
 
