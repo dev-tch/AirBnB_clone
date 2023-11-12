@@ -95,5 +95,6 @@ $
    ["[User] (df12dc43-0902-462d-8ef8-da9b0698a4c0) {'id': 'df12dc43-0902-462d-8ef8-da9b0698a4c0', 'created_at': datetime.datetime(2023, 11, 12, 23, 15, 4, 263378), 'updated_at': datetime.datetime(2023, 11, 12, 23, 15,       4, 263399)}"]
    (hbnb)
    ```
-
+7- update :  Updates an instance based on the class name and id by adding or updating attribute
+ > Usage: update <class name> <id> <attribute name> "<attribute value>"
 
