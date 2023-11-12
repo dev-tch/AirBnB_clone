@@ -148,9 +148,9 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update_dict(self, arg):
         """update object using dictionary"""
-        args2 = arg.split(",", 1)
-        args = shlex.split(args2[0])
-        dict_obj = json.loads(args2[1])
+        # args2 = arg.split(",", 1)
+        args = arg.split(" ", 2)
+        dict_obj = json.loads(args[2])
         for key, value in dict_obj.items():
             new_arg = "{} {} {} {}".format(args[0], args[1], key, value)
             self.do_update(new_arg)
@@ -199,7 +199,7 @@ class HBNBCommand(cmd.Cmd):
                 params = params.replace(",", " ")
             elif re.match(reg2, params):
                 reg2_ok = True
-                # params = params.replace(",", " ", 1)
+                params = params.replace(",", " ", 1)
                 name_proc = "{}_dict".format(name_proc)
             if not reg1_ok and not reg2_ok:
                 flag = False
