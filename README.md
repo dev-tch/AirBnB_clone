@@ -52,12 +52,14 @@ $
 ````
 ### Commands supported
 1. quit: to exit the program
+   > Usage: ``quit `` 
    ```
    vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
    (hbnb) quit
    vagrant@ubuntu-focal:~/.../AirBnB_clone$
    ```
-2. help  or help 'cmd'  : to show supported commands or info about specific command
+3. help: to show supported commands or info about specific command
+   > Usage: `` help or help <command name> `` 
    ````
    vagrant@ubuntu-focal:~/.../AirBnB_clone$ ./console.py
    (hbnb) help
@@ -69,14 +71,15 @@ $
    (hbnb) help all
    Print all string representation of all instances
    (hbnb)
-3. create <class name> : create new instance object of type class name
+4. create <class name> : create new instance object of type class name
+    > Usage: `` create <class name> `` 
    ````
    (hbnb) create BaseModel
    14d44bea-45c5-4799-b8a0-6a81969e80bd
    (hbnb)
    ````
    
-4. show 'class name' 'id' : Prints the string representation of an instance based on the class name and id
+5. show 'class name' 'id' : Prints the string representation of an instance based on the class name and id
     > Usage: `` show <class name> <id> `` 
    ````
    (hbnb) show BaseModel 14d44bea-45c5-4799-b8a0-6a81969e80bd
