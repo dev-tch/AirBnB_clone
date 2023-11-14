@@ -118,3 +118,8 @@ class TestBaseModel(unittest.TestCase):
     def test__ini__(self):
         """test constructor method"""
         self.assertTrue(isinstance(self.objBaseModel, BaseModel))
+
+    def test_id(self):
+        """ test generation new id for every new instance created """
+        new_obj = BaseModel()
+        self.assertNotEqual(self.objBaseModel.id, new_obj.id)
