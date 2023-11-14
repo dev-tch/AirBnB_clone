@@ -115,3 +115,7 @@ class TestBaseModel(unittest.TestCase):
                                            self.objBaseModel.id,
                                            self.objBaseModel.__dict__)
         self.assertEqual(result_str, result_str)
+
+    def test__ini__(self):
+        """test constructor method"""
+        self.assertTrue(isinstance(self.objBaseModel, BaseModel))
