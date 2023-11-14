@@ -113,11 +113,11 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd('User.count()')
             self.assertTrue(int(f.getvalue()) >= 0)
-        with patch('sys.stdout', new=StringIO()) as v:
+        with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd('create User')
-        with patch('sys.stdout', new=StringIO()) as v:
+        with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd('User.count()')
-            self.assertTrue(int(v.getvalue()) >= 1)
+            self.assertTrue(int(f.getvalue()) >= 1)
 
     def test_user(self):
         """test some commands on User Object"""
