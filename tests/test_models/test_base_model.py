@@ -127,5 +127,9 @@ class TestBaseModel(unittest.TestCase):
         self.assertNotEqual(self.objBaseModel.id, new_obj.id)
 
     def test_created_at(self):
-        """ check  attribute creat_at """
+        """ check  attribute created_at """
         self.assertIsInstance(self.objBaseModel.created_at, datetime)
+
+    def test_updated_at(self):
+        """ check  attribute created_at """
+        self.assertIsInstance(self.objBaseModel.updated_at, datetime)
