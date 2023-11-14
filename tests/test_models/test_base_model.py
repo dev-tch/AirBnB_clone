@@ -115,7 +115,7 @@ class TestBaseModel(unittest.TestCase):
                                            self.objBaseModel.__dict__)
         self.assertEqual(result_str, result_str)
 
-    def test__ini__(self):
+    def test__init__(self):
         """test constructor method"""
         self.assertTrue(isinstance(self.objBaseModel, BaseModel))
 
@@ -126,6 +126,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(new_obj.id, str)
         self.assertNotEqual(self.objBaseModel.id, new_obj.id)
 
-    def created_at(self):
+    def test_created_at(self):
         """ check  attribute creat_at """
         self.assertIsInstance(self.objBaseModel.created_at, datetime)
