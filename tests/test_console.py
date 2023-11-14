@@ -131,16 +131,16 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd('all User')
             self.assertTrue(f.getvalue() != "** class doesn't exist **\n")
-        with patch('sys.stdout', new=StringIO()) as v:
+        with patch('sys.stdout', new=StringIO()) as f:
             cmd_up = "update User " + printed_user_id + " name TCH"
             print(cmd_up)
             HBNBCommand().onecmd(cmd_up)
             HBNBCommand().onecmd("show User " + printed_user_id)
-            self.assertTrue("TCH" in v.getvalue())
+            self.assertTrue("TCH" in f.getvalue())
             HBNBCommand().onecmd("destroy User " + printed_user_id)
-        with patch('sys.stdout', new=StringIO()) as v:
+        with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("show User "+printed_user_id)
-            self.assertEqual(v.getvalue(), "** no instance found **\n")
+            self.assertEqual(f.getvalue(), "** no instance found **\n")
 
 
 if __name__ == '__main__':
