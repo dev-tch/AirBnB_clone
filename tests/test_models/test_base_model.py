@@ -104,3 +104,14 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(dt_up_iso, datetime)
         self.assertEqual(self.objBaseModel.created_at, dt_cr_iso)
         self.assertEqual(self.objBaseModel.updated_at, dt_up_iso)
+
+    def test__str__(self):
+        """ test __str__"""
+        # Rules
+        # __str__: should print: [<class name>] (<self.id>) <self.__dict__>
+        result_str = self.objBaseModel.__str__()
+        name_cls = self.objBaseModel.__class__.__name__
+        expected_str = "[] ({}) {}".format(name_cls,
+                                           self.objBaseModel.id,
+                                           self.objBaseModel.__dict__)
+        self.assertEqual(result_str, result_str)
