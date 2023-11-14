@@ -59,7 +59,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         elif args[0] not in HBNBCommand.defined_class_list:
             print("** class doesn't exist **")
-        elif len(arg) < 2:
+        elif len(args) < 2:
             print("** instance id missing **")
         else:
             str_object_id = ".".join(map(str, args[:2]))
