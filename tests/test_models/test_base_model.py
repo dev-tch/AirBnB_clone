@@ -122,4 +122,10 @@ class TestBaseModel(unittest.TestCase):
     def test_id(self):
         """ test generation new id for every new instance created """
         new_obj = BaseModel()
+        self.assertIsInstance(self.objBaseModel.id, str)
+        self.assertIsInstance(new_obj.id, str)
         self.assertNotEqual(self.objBaseModel.id, new_obj.id)
+
+    def created_at(self):
+        """ check  attribute creat_at """
+        self.assertIsInstance(self.objBaseModel.created_at, datetime)
