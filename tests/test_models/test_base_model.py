@@ -54,7 +54,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertTrue(base_model.BaseModel.save.__doc__)
         self.assertTrue(base_model.BaseModel.to_dict.__doc__)
         self.assertTrue(base_model.BaseModel.__str__.__doc__)
-        self.assertTrue(base_model.BaseModel.__str__.__doc__)
 
     def test_save(self):
         """ test method save """
