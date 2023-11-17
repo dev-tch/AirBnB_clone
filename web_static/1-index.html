@@ -14,11 +14,19 @@
                 background-color: #00FF00;
                 height: 60px;
                 width: 100%;
-                text-align: center;
+
+                /*start  flex box:
+                center the content both vertically and horizontally within the footer
+                */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center; /*end flex properties*/
+
+                /*position an element relative to the browser window*/
                 position: fixed;
                 bottom: 0;
-                left: 0;
-                line-height: 60px
+                left: 0
             }
         </style>
     </head>
@@ -28,7 +36,9 @@
         </header>
         <!-- And here is our main footer that is used across all the pages of our website -->
         <footer>
-            Best School
+            <span>
+                Best School
+            </span>
         </footer >
     </body>
 </html>
