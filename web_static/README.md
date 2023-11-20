@@ -26,7 +26,7 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 - to build the final web page version (8-index.html) , we procede by adding some style in each revision of xx.index (xx: 0-->8)
 
 example of result of launching 8-index.html
-
+![logo project Hbnb.](https://github.com/dev-tch/AirBnB_clone/blob/main/pictures/test_web_page.png)
 
 ### Requirements 
 
