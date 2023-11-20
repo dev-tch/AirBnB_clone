@@ -2,7 +2,7 @@
 {
     font-size: 30px;
     text-align: center;
-
+    padding-bottom: 70px;
 }
 
 .container .places article
@@ -13,7 +13,7 @@
     border: solid 1px #FF5A5F;
     border-radius: 4px;
     display: inline-block;
-    height: 150px;
+    vertical-align: top;
 }
 .container .places h1
 {
@@ -49,4 +49,58 @@ div.price_by_night {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+.container .places article div.information
+{
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top:20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+div.max_guest,
+div.number_rooms,
+div.number_bathrooms
+{
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    font-size: 15px;
+}
+div.max_guest {
+    background-image: url('../images/icon_group.png');
+}
+div.number_rooms {
+    background-image: url('../images/icon_bed.png');
+}
+div.number_bathrooms{
+    background-image: url('../images/icon_bath.png');
+}
+div.max_guest span
+{
+    font-size: 15px;
+}
+div.description,
+div.user
+{
+    font-size: 14px;
+    font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+}
+div.user span
+{
+    font-weight: bold;
+}
+div.user
+{
+    margin-top: 10px;
+}
+.container .places article div.price_by_night,
+.container .places article div.information,
+.container .places article div.user,
+.container .places article div.description {
+    box-sizing: border-box;
 }
