@@ -1,0 +1,52 @@
+.places
+{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.container .places article
+{
+    width: 390px;
+    padding:20px;
+    margin:20px ;
+    border: solid 1px #FF5A5F;
+    border-radius: 4px;
+    display: inline-block;
+    height: 150px;
+}
+.container .places h1
+{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+.container .places article h2
+{
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 2px;
+}
+div.price_by_night {
+    display: inline-block;
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    width: 80px ;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+
+}
+.container .places article
+{
+    position: relative;
+}
+.container .places article div.price_by_night
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
