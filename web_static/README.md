@@ -21,6 +21,8 @@ ifying headings to all sections, or else use a “div” element instead for any
 'D:/_AirBnb/AirBnB_clone/web_static/8-index.html' => OK
  ```
 Test2
+
+ ```
 $ python w3c_validator.py  /d/_AirBnb/AirBnB_clone/web_static/styles/*.css
 'D:/_AirBnb/AirBnB_clone/web_static/styles/2-common.css' => OK
 'D:/_AirBnb/AirBnB_clone/web_static/styles/2-footer.css' => OK
@@ -34,6 +36,6 @@ $ python w3c_validator.py  /d/_AirBnb/AirBnB_clone/web_static/styles/*.css
 'D:/_AirBnb/AirBnB_clone/web_static/styles/6-filters.css' => OK
 'D:/_AirBnb/AirBnB_clone/web_static/styles/7-places.css' => OK
 'D:/_AirBnb/AirBnB_clone/web_static/styles/8-places.css' => OK
-
+ ```
 
 
