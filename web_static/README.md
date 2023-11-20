@@ -25,7 +25,9 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 - each file 0-index.html to 8-index.html has its own css files (folder styles)
 - to build the final web page version (8-index.html) , we procede by adding some style in each revision of xx.index (xx: 0-->8)
 
-example of result of launching 8-index.html
+launching 8-index.html on: 
+- Microsoft Edge for Business - Version 119.0.2151.72 (Version officielle) (64 bits)
+
 ![logo project Hbnb.](https://github.com/dev-tch/AirBnB_clone/blob/main/pictures/test_web_page.PNG)
 
 ### Requirements 
