@@ -22,8 +22,8 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 
 ### execution 
 
-each file 0-index.html to 8-index.html has its own css files (folder styles)
-to build the final web page version (8-index.html) , we procede by adding some style in each revision of xx.index (xx: 0-->8)
+- each file 0-index.html to 8-index.html has its own css files (folder styles)
+- to build the final web page version (8-index.html) , we procede by adding some style in each revision of xx.index (xx: 0-->8)
 
 example of result of launching 8-index.html
 
