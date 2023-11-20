@@ -1,9 +1,9 @@
 ### About Project 
 
-all files of project (*.css *.html images ) are in directory web-static
-goal of project to learn HTML && css 
-Html : describes the structure of a Web page
-css: specifying how Web page is  presented to users
+- all files of project (*.css *.html images ) are in directory web-static
+- goal of project to learn HTML && css 
+- Html : describes the structure of a Web page
+- css: specifying how Web page is  presented to users
 
 ### Background Context
 Now that you have a command interpreter for managing your AirBnB objects, it’s time to make them alive!
