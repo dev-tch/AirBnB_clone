@@ -1,6 +1,6 @@
 ### About Project 
 
-- all files of project (*.css *.html images ) are in directory web-static
+- all files of project (*.css *.html images ) are in directory AirBnB_clone/web_static
 - goal of project to learn HTML && css 
 - Html : describes the structure of a Web page
 - css: specifying how Web page is  presented to users
