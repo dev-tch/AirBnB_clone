@@ -20,6 +20,14 @@ During this project, you will learn how to manipulate HTML and CSS languages. HT
 
 Before starting, please fork or clone the repository AirBnB_clone from your partner if you were not the owner of the previous project.
 
+### execution 
+
+each file 0-index.html to 8-index.html has its own css files (folder styles)
+to build the final web page version (8-index.html) , we procede by adding some style in each revision of xx.index (xx: 0-->8)
+
+example of result of launching 8-index.html
+
+
 ### Requirements 
 
 Your code should be W3C compliant and validate with W3C-Validator
