@@ -20,6 +20,7 @@ ifying headings to all sections, or else use a “div” element instead for any
 'D:/_AirBnb/AirBnB_clone/web_static/7-index.html' => OK
 'D:/_AirBnb/AirBnB_clone/web_static/8-index.html' => OK
  ```
+
 Test2
 
  ```
